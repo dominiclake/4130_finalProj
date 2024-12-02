@@ -31,7 +31,7 @@ body{
     background-color: antiquewhite;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
     width: 60%;
@@ -63,4 +63,6 @@ body{
     border-radius: 100px;
 }
 
-.appBox
+.appBox button{
+    
+}
