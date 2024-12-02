@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>SMS Message Classifier</title>
+    <script src="https://kit.fontawesome.com/b76bdd874a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<header>
+    <p>SMS Message Classifier</p>
+</header>
+
+<body>
+    <div class="warningBox">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>This SMS Message Classifier Uses AI and should not be used to determine the authenticity of messages with certainty. Use your own judgement and exercise caution.</p>
+    </div>
+
+    <div class="appBox">
+        <p>Enter your SMS message to be classified</p>
+        <input type="text" id="message">
+        <button type="button" onclick="classifySMS()">Classify</button>
+        <div class="dynamicText" id="dynamicText">
+            <p>test message</p>
+            <p>Deep Learning: test Naive Bayes: test</p> 
+        </div>
+    </div>
+</body>
