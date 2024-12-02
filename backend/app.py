@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load models
-model = torch.load('model.pth')
+model = torch.load('deep_learning_model.pth')
 model.eval()
 vectorizer = joblib.load('vectorizer.pkl')
 naive_bayes_model = joblib.load('naive_bayes_model.pkl')
