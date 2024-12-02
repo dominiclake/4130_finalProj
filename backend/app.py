@@ -5,7 +5,7 @@ import joblib
 from model import SMSClassifier
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # -------------------------------
 # Load Deep Learning Model
