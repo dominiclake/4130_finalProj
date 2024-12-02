@@ -22,7 +22,7 @@ dl_model.eval()  # Set to evaluation mode
 # Load Naive Bayes Model and Vectorizer
 # -------------------------------
 nb_model = joblib.load('naive_bayes_model.pkl')
-vectorizer = joblib.load('vectorizer.pkl')
+vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 # -------------------------------
 # Helper Functions
