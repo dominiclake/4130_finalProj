@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Load models
 model = torch.load('deep_learning_model.pth')
 model.eval()
-vectorizer = joblib.load('vectorizer.pkl')
+vectorizer = joblib.load('tfidf_vectorizer.pkl')
 naive_bayes_model = joblib.load('naive_bayes_model.pkl')
 
 @app.route('/predict', methods=['POST'])
