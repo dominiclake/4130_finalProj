@@ -15,7 +15,7 @@ num_classes = 4
 
 # Recreate and load the deep learning model
 dl_model = SMSClassifier(vocab_size, embed_dim, num_classes)
-dl_model.load_state_dict(torch.load('model_state_dict.pth'))
+dl_model.load_state_dict(torch.load('deep_learning_model.pth'))
 dl_model.eval()  # Set to evaluation mode
 
 # -------------------------------
