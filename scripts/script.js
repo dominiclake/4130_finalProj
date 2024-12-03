@@ -1,4 +1,4 @@
-const dynamicText = document.getElementById("dyanmicText");
+let dynamicText = document.getElementById("dynamicText");
 
 function updateText(message, result){
     dynamicText.innerHTML = `
