@@ -1,14 +1,15 @@
 let dynamicText = document.getElementById("dynamicText");
 
 function getPredictionLabel(value) {
-    const labels = ['personal', 'spam', 'business', 'other'];
+    const labels = ['Personal', 'Spam', 'Business', 'Other'];
     return labels[value] || 'unknown';
 }
 
 function updateText(message, result){
     dynamicText.innerHTML = `
     <p>${message}</p>
-    <p>Deep Learning: ${getPredictionLabel(result.deep_learning_prediction)} Naive Bayes: ${getPredictionLabel(result.naive_bayes_prediction)}</p> 
+    <p>Deep Learning: ${getPredictionLabel(result.deep_learning_prediction)}</p>
+    <p>Naive Bayes: ${getPredictionLabel(result.naive_bayes_prediction)}</p> 
     `;
 }
 
